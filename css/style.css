@@ -1,0 +1,601 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+a {
+  /* text-decoration: none; */
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* 見出し */
+.page-title {
+  color:rgb(241, 57, 149);
+  font-size: 4rem;
+  line-height: 1;
+  font-family: 'Philosopher', serif;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.page-subtitle {
+  margin: 40px 30px;
+  color: #555;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.message {
+  font-size: 1.125rem;
+  /* line-height: 1; */
+  color: rgb(241, 57, 149);
+  padding: 0 8px 8px;
+  border-bottom: 2px solid rgb(241, 57, 149) ;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+/* ボタン */
+.button {
+  display:inline-block;
+  font-size: 1.375rem;
+  background: rgb(102, 209, 128);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+.button:hover {
+  background: rgb(84, 173, 107);
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+
+
+/* HEADER ---------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-box {
+  display: flex;
+}
+.icon-box h2 {
+  color: #0bd;
+  font-size: 1.25rem;
+  line-height: 100px;
+  height: 100px;
+}
+.icon-box h2 a {
+  color: #0bd;
+}
+.main-nav {
+  display: flex;
+  /* color: #555; */
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 10px;
+}
+.main-nav a {
+  color: #0bd;
+}
+
+/* HOME ----------------- */
+#home {
+  background-image: url(../images/naomi2.jpg);
+  background-color: #fff;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center top;
+}
+.home-content .content-box {
+  display: block;
+  margin: 30px 15vw;
+}
+.home-content .content-box p {
+  color: #444;
+  text-align: left;
+  font-size: 1.125rem;
+  margin: 10px 0 20px;
+}
+.home-content .button {
+  width: 200px;
+  height: 50px;
+  padding: 5px 20px;
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+}
+.below {
+  margin-left: 60px;
+}
+
+
+/* NEWS -------------- */
+
+#news {
+  display: flex;
+  width: 100%;
+}
+#latest-news {
+  width: 70%;
+}
+#news .container {
+  margin-top: 40px;
+  width: 95%;
+  background-color: #fff;
+}
+#news .container .item p {
+  margin-top: 40px;
+  font-family: 'Philosopher', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0bd;
+  text-align: left;
+}
+#news .container .comment {
+  width: 90%;
+  height: auto;
+  line-height: 1.5rem;
+  padding: 5px 20px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+}
+#news .container .image {
+  display: block;
+  width: 90%;
+  height: 200px;
+  background-color: antiquewhite;
+}
+.coding-pic {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.coding-pic .swiper-container {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.coding-pic .swiper-wrapper {
+  background-color: #fff;
+}
+.coding-pic .swiper-slide {
+  width: 100%;
+  height: auto;
+}
+#news .container .image-mono img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+#news .container .image-reiwa p {
+  font-weight: bold;
+  text-align: center;
+}
+#news .container .image-reiwa .word {
+  width: 90%;
+  height: 200px;
+  font-size: 12px;
+  /* object-fit: cover;
+  object-position: 50% 7%; */
+  overflow-y: scroll;
+}
+
+
+
+#sns {
+  width: 30%;
+}
+#sns .sns-box {
+  margin-bottom: 80px;
+}
+#sns .sns-box .item {
+  font-family: 'Philosopher', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0bd;
+  text-align: left;
+}
+#sns .sns-box .box img {
+  display: block;
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: 30% 80% ;
+  background-color: antiquewhite;
+}
+#sns .sns-box .fb-page {
+  display: block;
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: 30% 80% ;
+  background-color: antiquewhite;
+}
+
+
+/* コミュニケーション */
+
+#communicate {
+  margin-top: 150px;
+  display: flex;
+  width: 100%;
+}
+#profile {
+  width: 50%;
+}
+#profile img {
+  width: 120px;
+}
+#profile .my-message {
+  width: 90%;
+  height: 150px;
+  padding: 8px ;
+  overflow-y: scroll;
+  border: 1px solid #333;
+}
+#profile .message p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+
+#contact {
+  width: 50%;
+  background-color: antiquewhite;
+}
+/* オリジナルの Contact Form */
+/* #contact form ul {
+  margin-bottom: 14px;
+}
+#contact form .form-item {
+  list-style: none;
+} */
+/* label {
+  font-size: 1.125rem;
+  margin-bottom: 2px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  margin-left: 5%;
+  background: rgba(255, 255, 255, .6);
+  border: 1px #fff solid;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 90%;
+  max-width: 240px;
+  margin-bottom: 12px;
+}
+textarea {
+  width: 90%;
+  height: 10rem;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+} */
+
+
+/* ホームタウン */
+
+#hometown-info {
+  margin-top: 150px;
+  display: flex;
+}
+#hometown-info .info {
+  width: 60%;
+}
+#hometown-info .info1, .info2 {
+  display: flex;
+  padding: 5px 0 5px 5px;
+  border: 1px solid #555 ;
+  margin: 0 15px 15px 0;
+}
+#hometown-info .info1 .pic1 {
+  display: block;
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+  background-color: antiquewhite;
+}
+#hometown-info .info1 .comment1 {
+  width: 50%;
+  height: 150px;
+  padding: 10px 0 0 10px;
+  overflow-y: scroll;
+}
+#hometown-info .info2 .pic2 {
+  display: block;
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+  background-color: antiquewhite;
+}
+#hometown-info .info2 .comment2 {
+  width: 50%;
+  height: 150px;
+  padding: 10px 0 0 10px;
+  overflow-y: scroll;
+}
+
+#hometown-info .map {
+  width: 40%;
+  height: 450px;
+  background-color:antiquewhite;
+}
+
+
+/* フッター */
+
+footer {
+  display: inline-block;
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(2, 70, 83);
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #0bd;
+}
+
+
+/* 交流作りページーーーーー */
+
+#koryu-top {
+  background-image: url(../images/kahoku.jpg);
+  min-height: 40vh;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+.grid {
+display: grid;
+gap: 40px 60px;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+margin-top: 6%;
+}
+#koryu-top .item a {
+  cursor: pointer;
+}
+
+
+
+/* モノ造りページ ーーーー*/
+
+#mono-top {
+  background-image: url(../images/craft.jpg);
+  background-color: #fff;
+  min-height: 40vh;
+}
+.big-bg2 {
+  background-size: cover;
+  background-position: center top;
+}
+.grid {
+  display: grid;
+  gap: 40px 60px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 8%;
+  }
+.grid .item img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+
+/* 礼和創りページーーーー */
+
+#reiwa-top {
+  background-image: url(../images/carp.JPG);
+  background-color: #fff;
+  height: 40vh;
+}
+.big-bg3 {
+  background-size: cover;
+  background-position: center center;
+}
+.grid {
+  display: grid;
+  gap: 40px 60px;
+  /* gap: 26px; */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 8%;
+  }
+.grid .item p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.grid .item .word {
+  height: 200px;
+  overflow-y: scroll;
+}
+.grid .item a {
+  color: #0bd;
+}
+
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+  .page-title {
+      font-size: 2.5rem;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+
+.button {
+  display:inline-block;
+  font-size: 1.125rem;
+  background: rgb(102, 209, 128);
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+
+.page-header {
+  display: block;
+}
+.icon-box {
+  display: block;
+}
+.icon-box canvas {
+  display: block;
+  margin: 0 auto;
+}
+.icon-box h2 {
+  color: #0bd;
+  line-height: 60px;
+  height: 60px;
+  text-align: center;
+}
+.icon-box h2 a {
+  color: #0bd;
+}
+.page-header .main-nav {
+  display: block;
+  margin: 0 auto;
+}
+.main-nav {
+  text-align: center;
+  display: flex;
+  list-style: none;
+}
+.main-nav li {
+  font-size: 1.25rem;
+}
+.main-nav a {
+  color: #0bd;
+}
+
+
+#news {
+  margin-top: 100px;
+  display: block;
+  width: 100%;
+}
+#latest-news {
+  display: block;
+  width: 100%;
+}
+#news .container {
+  display: block;
+  margin-left: 5%;
+  /* margin: 0 auto; */
+  width: 100%;
+  background-color: #fff;
+}
+#sns {
+  width: 70%;
+  margin: 150px auto;
+}
+#sns .sns-box {
+  margin-bottom: 50px;
+}
+/* #sns .sns-box .item {
+  font-family: 'Philosopher', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0bd;
+  text-align: left;
+} */
+
+
+#communicate {
+  margin-top: 150px;
+  display: block;
+  width: 100%;
+}
+#profile {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact {
+  width: 80%;
+  margin: 120px auto;
+  background-color: antiquewhite;
+}
+
+#hometown-info {
+  display: block;
+}
+#hometown-info .info {
+  width: 95%;
+  margin-top: 150px;
+  margin: 0 auto;
+}
+
+#hometown-info .map {
+  width: 80%;
+  height: 450px;
+  margin: 10px auto;
+  background-color:antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
